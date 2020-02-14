@@ -24,7 +24,7 @@ This is the architecture of inceptionv3. I added two more layers. One GlobalAver
 ![Image of inceptionv3 network ](https://miro.medium.com/max/960/1*gqKM5V-uo2sMFFPDS84yJw.png)
 
 # Training
-Firstly we have freezed all the layers of the network except the classifier and we trained the model for 50 epochs.Then we have unfreezed the last 63 layes of the network and trained the network for 50 epochs.
+Firstly we have freezed all the layers of the network except the classifier and we trained the model for 50 epochs.Then we have unfreezed the last 63 layers of the network and trained the network for 50 epochs.
 <br>
 <br>The accuracy of the model during the training
 <br>
