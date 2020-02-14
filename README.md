@@ -33,3 +33,54 @@ Firstly we have freezed all the layers of the network except the classifier and 
 <br>The loss of the model during the training
 <br>
 ![Image of accuracy ](https://github.com/armando-domi/Celebrity-Classification/blob/master/loss.png)
+
+# Results
+The accuracy of the model at test set is: 0.982
+<br>
+<table>
+  <caption>Classification Report</caption>
+  <tr>
+    <td></td>
+    <th scope="col">precision</th>
+    <th scope="col">recall</th>
+    <th scope="col">f1-score</th>
+    <th scope="col">support</th>
+  </tr>
+  <tr>
+    <th scope="row">Adam_Gilchrist</th>
+    <td>1.00</td>
+    <td>0.94</td>
+    <td>0.97</td>
+    <td>32</td>
+  </tr>
+  <tr>
+    <th scope="row">Adam_Housley</th>
+    <td>0.95</td>
+    <td>1.00</td>
+    <td>0.98</td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <th scope="row">Adam_Irigoyen</th>
+    <td>1.00</td>
+    <td>1.00</td>
+    <td>1.00</td>
+    <td>38</td>
+  </tr>
+  <tr>
+    <th scope="row">Adam_Johnson</th>
+    <td>1.00</td>
+    <td>0.98</td>
+    <td>0.99</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <th scope="row">Adam_Lallana</th>
+    <td>0.96</td>
+    <td>1.00</td>
+    <td>0,98</td>
+    <td>45</td>
+
+  </tr>
+  
+</table>
