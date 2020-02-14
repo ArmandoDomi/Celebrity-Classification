@@ -27,19 +27,6 @@ from keras.preprocessing import image
 import numpy as np
 
 
-def plot_roc_curve(fpr, tpr):
-    plt.plot(fpr, tpr, color='orange',label='ROC curve (area = %0.2f)' % auc(fpr, tpr))
-    plt.plot([0, 1], [0, 1], color='darkblue', linestyle='--')
-    plt.xlabel('False Positive Rate')
-    plt.ylabel('True Positive Rate')
-    plt.title('Receiver Operating Characteristic (ROC) Curve')
-    plt.legend()
-    plt.show()
-
-
-
-
-
 num_of_test_samples = 179
 batch_size =32
 test_datagen=ImageDataGenerator(rescale=1./255)
@@ -49,7 +36,6 @@ test_set = test_datagen.flow_from_directory('./dataset/test/',
                                             class_mode = 'categorical',shuffle=False)
 
 
-#
 model = load_model('./final_implementation/model4b.50-0.11.hdf5')
 scores =model.evaluate_generator(test_set,steps=32)
 print(scores)
@@ -67,16 +53,5 @@ print('Classification Report')
 target_names = ['Adam_Gilchrist', 'Adam_Housley', 'Adam_Irigoyen','Adam_Johnson','Adam_Lallana']
 print(classification_report(test_set.classes, y_pred, target_names=target_names))
 print(test_set.classes)
-
-
-
-
-#now draw roc curve
-#fpr, tpr, thresholds = roc_curve(test_set.classes, y_pred)
-#plot_roc_curve(fpr, tpr)
-
-
-
-
 
 
