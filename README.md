@@ -27,7 +27,9 @@ This is the architecture of inceptionv3. I added two more layers. One GlobalAver
 Firstly we have freezed all the layers of the network except the classifier and we trained the model for 50 epochs.Then we have unfreezed the last 63 layes of the network and trained the network for 50 epochs.
 <br>
 <br>The accuracy of the model during the training
+<br>
 ![Image of accuracy ](https://github.com/armando-domi/Celebrity-Classification/blob/master/accuracy.png)
 
 <br>The loss of the model during the training
+<br>
 ![Image of accuracy ](https://github.com/armando-domi/Celebrity-Classification/blob/master/loss.png)
