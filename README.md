@@ -28,5 +28,6 @@ Firstly we have freezed all the layers of the network except the classifier and 
 <br>
 <br>The accuracy of the model during the training
 ![Image of accuracy ](https://github.com/armando-domi/Celebrity-Classification/blob/master/accuracy.png)
+
 <br>The loss of the model during the training
 ![Image of accuracy ](https://github.com/armando-domi/Celebrity-Classification/blob/master/loss.png)
