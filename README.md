@@ -1,2 +1,25 @@
 # Celebrity-Classification
-Celebrity classification with transfer learning using vgg16
+Celebrity classification using Convolutional Neural Networks
+
+
+# Dataset
+Used  dataset from VGGFace2, you can find it <a href="http://www.robots.ox.ac.uk/~vgg/data/vgg_face2/">here</a>
+<br>
+<br>I choosed 5 classes from the dataset with  id 51-55
+<br>The dataset of 5 classes contains 1808 images totaly
+<br>
+<br>The data was split in the following way:
+<br> 1. 80% of data for training
+<br> 2. 10% of data for testing
+<br> 3. 10% of data for validation
+
+
+# Transfer Learning
+We don't train an entire Convolutional Network from scratch. We freeze some of the  ConvNet layers and only fine-tune some higher-level portion of the network.
+<br>So we freeze all layers from InceptionV3  except  the last 63 layer
+![Image of Transfer Learning ](https://www.topbots.com/wp-content/uploads/2019/12/cover_transfer_learning_1600px_web-1280x640.jpg)
+
+
+# InceptionV3
+
+![Image of Transfer Learning ](https://miro.medium.com/max/960/1*gqKM5V-uo2sMFFPDS84yJw.png)
