@@ -21,7 +21,12 @@ We don't train an entire Convolutional Network from scratch. We freeze some of t
 
 # InceptionV3
 This is the architecture of inceptionv3. I added two more layers. One GlobalAveragePooling and one Dense layer with 1024 neurons.
-![Image of Transfer Learning ](https://miro.medium.com/max/960/1*gqKM5V-uo2sMFFPDS84yJw.png)
+![Image of inceptionv3 network ](https://miro.medium.com/max/960/1*gqKM5V-uo2sMFFPDS84yJw.png)
 
 # Training
 Firstly we have freezed all the layers of the network except the classifier and we trained the model for 50 epochs.Then we have unfreezed the last 63 layes of the network and trained the network for 50 epochs.
+<br>
+<br>The accuracy of the model during the training
+![Image of accuracy ](https://github.com/armando-domi/Celebrity-Classification/blob/master/accuracy.png)
+<br>The loss of the model during the training
+![Image of accuracy ](https://github.com/armando-domi/Celebrity-Classification/blob/master/loss.png)
