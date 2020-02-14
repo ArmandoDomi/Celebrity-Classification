@@ -13,7 +13,6 @@ Used  dataset from VGGFace2, you can find it <a href="http://www.robots.ox.ac.uk
 <br> 2. 10% of data for testing
 <br> 3. 10% of data for validation
 
-
 # Transfer Learning
 We don't train an entire Convolutional Network from scratch. We freeze some of the  ConvNet layers and only fine-tune some higher-level portion of the network.
 <br>So we freeze all layers from InceptionV3  except  the last 63 layer
@@ -23,3 +22,6 @@ We don't train an entire Convolutional Network from scratch. We freeze some of t
 # InceptionV3
 This is the architecture of inceptionv3. I added two more layers. One GlobalAveragePooling and one Dense layer with 1024 neurons.
 ![Image of Transfer Learning ](https://miro.medium.com/max/960/1*gqKM5V-uo2sMFFPDS84yJw.png)
+
+# Training
+Firstly we have freezed all the layers of the network except the classifier and we trained the model for 50 epochs.Then we have unfreezed the last 63 layes of the network and trained the network for 50 epochs.
