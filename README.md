@@ -32,7 +32,7 @@ Firstly we have freezed all the layers of the network except the classifier and 
 
 <br>The loss of the model during the training
 <br>
-![Image of accuracy ](https://github.com/armando-domi/Celebrity-Classification/blob/master/threshold.png)
+![Image of accuracy ](https://github.com/armando-domi/Celebrity-Classification/blob/master/loss.png)
 
 # Results
 The accuracy of the model at test set is: 0.982
