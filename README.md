@@ -78,7 +78,7 @@ The accuracy of the model at test set is: 0.982
     <th scope="row">Adam_Lallana</th>
     <td>0.96</td>
     <td>1.00</td>
-    <td>0,98</td>
+    <td>0.98</td>
     <td>45</td>
 
   </tr>
